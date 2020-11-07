@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/lightblue"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    tools:context=".MainActivity" >
+
+
+    <TextView
+        android:id="@+id/tvRating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Features:"
+        android:textAlignment="center"
+        android:textColor="#0000ff"
+        android:layout_marginTop="10dp"
+        android:textSize="30sp"
+        android:gravity="center_horizontal" />
+
+
+
+    <RadioGroup
+        android:id="@+id/rgFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+
+        <RadioButton
+            android:id="@+id/rbFantastic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="Average"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rbExcellent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="Good"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/rbSuperb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="Excellent"
+            android:textSize="20sp"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvhappy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Performance:"
+        android:textAlignment="center"
+        android:textColor="#ff00ff"
+        android:layout_marginTop="10dp"
+        android:textSize="30sp"
+        android:gravity="center_horizontal" />
+
+
+
+    <CheckBox
+        android:id="@+id/cbNotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Efficient"
+        android:textSize="20sp"/>
+
+    <CheckBox
+        android:id="@+id/cbSoftware"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Software"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/cbCertificate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Accurate"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+
+        android:backgroundTint="#00abe5"
+
+        android:text="Submit"
+        android:textSize="20sp"/>
+</LinearLayout>
